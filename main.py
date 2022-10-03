@@ -139,5 +139,5 @@ try:
 
 except Exception as err:
 	print(err)
-	# from os import system
-	# system("kill 1")
+	from os import system
+	system("kill 1")
