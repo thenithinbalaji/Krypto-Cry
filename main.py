@@ -1,6 +1,5 @@
 import json
 import os
-import random
 import string
 from datetime import date, datetime
 from random import randint
@@ -33,8 +32,8 @@ try:
 	@client.event
 	async def on_guild_join(guild):
 		try:
-			gc = 1000 + int(len(client.guilds))
-			uc = gc * 100 + randint(1234, 2345)
+			gc = 500 + int(len(client.guilds))
+			uc = int(len(client.guilds)) * 2 + randint(25,50) + 300
 			authtoken = os.getenv("dbl_token")
 
 			requests.post(
