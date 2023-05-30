@@ -5,6 +5,9 @@ venv
 .env
 __pycache__
 
+# vscode
+tempCodeRunnerFile.python
+temp.py
 
 # ignores for replit files to not come to GitHub
 .replit
